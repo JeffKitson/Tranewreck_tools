@@ -73,4 +73,8 @@ Options
     -d, --derail=n                   makes new trusted connection to host:port
     -r, --rerail=n                   remove a given server from trusted connections.
 ```
+
+### tranewreck_single.rb
+tranewreck_single.rb allows for a basic subscribe command which will dump all evData to the socket connection. The sec_probe can also be easily altered to acheive other commands.   
+
 These tools are a work in progress. 
