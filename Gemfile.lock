@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    OptionParser (0.5.1)
+    json (2.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  OptionParser (~> 0.5.1)
+  json
+
+BUNDLED WITH
+   1.11.2
