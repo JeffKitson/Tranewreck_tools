@@ -1,6 +1,6 @@
 # Tranewreck
 
-Tranewreck is a collection of ruby scripts meant to connect with and expliot vulnerable thermostats running ComfortLink II based firmware, specifically the [Trane ComfortLink II XL850](https://www.trane.com/residential/en/products/thermostats-and-controls/connected-controls/comfortlink_xl850.html).
+Tranewreck is a collection of ruby scripts meant to connect with and exploit vulnerable thermostats running ComfortLink II based firmware, specifically the [Trane ComfortLink II XL850](https://www.trane.com/residential/en/products/thermostats-and-controls/connected-controls/comfortlink_xl850.html).  Use these tools only on devices you own or have consent to test. 
 
 There are three tools included in this repository:
 
@@ -16,7 +16,7 @@ $ bundle install
 ```
 
 ### tranewreck.rb
-tranewreck.rb is intended to obtain available information from vulnerable thermostats. It uses default credentials and exploits the plain-text protocol controling the device. After authenticating with the device commands are issued to obtain the following information:
+tranewreck.rb is intended to obtain available information from vulnerable thermostats. It uses default credentials and exploits the plain-text protocol controlling the device. After authenticating with the device commands are issued to obtain the following information:
 
 * installer
   * name
@@ -49,7 +49,7 @@ tranewreck.rb is intended to obtain available information from vulnerable thermo
   * start
   
   
-**Useage:**
+**Usage:**
 ```sh
 Usage: tranewreck.rb -t [TARGET] [options]
 
@@ -60,6 +60,7 @@ options
 ```
 
 ### derailer.rb
+Derailer is meant to change heating and cooling points as well as establish and delete trusted server connections. Here be dragons. Using this script my permanently update the settings of the targeted thermostat.
 
 **Useage:**
 ```sh
@@ -72,5 +73,4 @@ Options
     -d, --derail=n                   makes new trusted connection to host:port
     -r, --rerail=n                   remove a given server from trusted connections.
 ```
-
-
+These tools are a work in progress. 
